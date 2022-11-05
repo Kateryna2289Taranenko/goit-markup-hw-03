@@ -32,10 +32,9 @@ p{
   padding-left: 15px;
   padding-right: 15px;
 }
-.header {
-  background-color: #ffffff;
-  outline: 3px solid tomato;
-
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .title {
@@ -43,14 +42,34 @@ p{
   font-weight: 700;
   font-size: 36px;
   line-height: 1.1667;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.image {
+  display: block;
+  max-width: 100%;
+}
+ /* хедер */
+.header {
+  background-color: #ffffff;
+  border-bottom: 1px solid #ECECEC;
+  display: flex;
+  text-align: center;
+}
+.header-container {
+  display: flex;
+  text-align: center;
 }
 .logo {
-  display: inline-block;
+  display: block;
   color: #000000;
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.1923;
+  padding-top: 24px ;
+  padding-bottom: 25px;
+  margin-right: 93px;
 }
 .logo:focus {
   color: var(--accent-color);
@@ -64,13 +83,23 @@ p{
   font-size: 14px;
   line-height: 1.1428;
   letter-spacing: 0.02em;
+  display: block;
 }
 .link:hover,
 .link:focus {
   color: var(--accent-color);
 }
-.header-links .link.current {
+.list .link.current {
   color: var(--accent-color);
+}
+.list {
+  display: flex;
+  gap: 50px;
+  padding-left: 0;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  margin-right: 344px;
+  
 }
 .header-link {
   color: var(--primary-text-color);
@@ -78,19 +107,30 @@ p{
   font-size: 14px;
   line-height: 1.1428;
   letter-spacing: 0.02em;
+  display: block;
 }
 .header-link:hover,
 .header-link:focus {
   color: var(--accent-color);
 }
+.communication {
+  display: flex;
+  gap: 50px;
+  padding-left: 0;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+/* герої */
 .hero {
   background-color: #2f303a;
   text-align: center;
-  
+  padding-bottom: 200px;
+  padding-top: 200px;
 }
 .hero-title {
-  padding-top: 200px;
-  padding-bottom: 280px;
+  
+  margin-bottom: 30px;
   color: var(--primary-white-color);
   font-weight: 900;
   font-size: 44px;
@@ -98,11 +138,12 @@ p{
   letter-spacing: 0.06em;
 }
 .button-order {
-  display: block;
-  margin: 0 auto;
-  border-radius: 4px;
+  display: inline-block;
   padding: 10px 32px;
-  margin-top: 30px;
+  border-radius: 4px;
+  margin: 0 auto;
+  min-width: 216px;
+  height: 50px;
   background-color: var(--accent-color);
   color: var(--primary-white-color);
   cursor: pointer;
@@ -129,7 +170,18 @@ p{
   color: var(--primary-white-color);
   background-color: var(--accent-color);
 }
+/* особливості */
+.features-lists {
+  display: flex;
+}
+.features-list:last-child{
+  margin-right: 0;
+}
+.features-list {
+  margin-right: 30px;
+}
 .features-title {
+  margin-bottom: 10px;
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 14px;
@@ -140,20 +192,48 @@ p{
   font-size: 14px;
   line-height: 1.7142;
 }
+/* робота */
+.work {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 30px;
+  padding-left: 0;
+  
+}
+.work-images {
+  flex-basis: calc(100% / 3 - 30px);
+}
+/* команда */
 .team {
   background-color: #f5f4fa;
+  outline: 3px solid royalblue;
+}
+.team-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding-left: 0;
+}
+.employee {
+flex-basis: calc(100% / 4 - 30px);
+text-align: center;
+padding-bottom: 30px;
 }
 .team-title {
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.1875;
+  margin-top: 30px;
 }
 .team-position {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.1875;
+  margin-top: 10px;
+  
 }
+/* проекти */
 .projects-title {
   color: var(--title-text-color);
   font-weight: 700;
@@ -167,8 +247,13 @@ p{
   font-size: 16px;
   line-height: 1.875;
 }
+/* підвал */
 .footer {
   background-color: #2f303a;
+}
+.footer-container{
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .logo-footer {
   color: var(--primary-white-color);
@@ -176,9 +261,17 @@ p{
   font-weight: 700;
   font-size: 26px;
   line-height: 1.1923;
+  display: block;
+  margin-bottom: 20px;
 }
 .logo-footer:focus {
   color: var(--accent-color);
+}
+.list-address {
+  padding-left: 0;
+}
+.link-address:not(:last-child){
+  margin-bottom: 9px;
 }
 .footer-map {
   color: var(--primary-white-color);
@@ -186,6 +279,7 @@ p{
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7142;
+  display: block;
 }
 .footer-map:hover,
 .footer-map:focus {
@@ -197,6 +291,7 @@ p{
   font-size: 14px;
   line-height: 1.7143;
   font-style: normal;
+  display: block;
 }
 .footer-link:focus,
 .footer-link:hover {
