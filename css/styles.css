@@ -5,6 +5,7 @@
   --primary-white-color: #ffffff;
   --button-color: #f5f4fa;
 }
+
 body {
   color: var(--primary-text-color);
   font-family: Roboto, sans-serif;
@@ -15,10 +16,28 @@ a {
 }
 ul {
   list-style: none;
+  margin: 0;
+  margin: 0;
+}
+h1,
+h2,
+h3,
+p{
+  margin: 0;
+}
+.container{
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 .header {
   background-color: #ffffff;
+  outline: 3px solid tomato;
+
 }
+
 .title {
   color: var(--title-text-color);
   font-weight: 700;
@@ -26,6 +45,7 @@ ul {
   line-height: 1.1667;
 }
 .logo {
+  display: inline-block;
   color: #000000;
   font-family: Raleway, sans-serif;
   font-weight: 700;
@@ -66,8 +86,11 @@ ul {
 .hero {
   background-color: #2f303a;
   text-align: center;
+  
 }
 .hero-title {
+  padding-top: 200px;
+  padding-bottom: 280px;
   color: var(--primary-white-color);
   font-weight: 900;
   font-size: 44px;
@@ -75,13 +98,18 @@ ul {
   letter-spacing: 0.06em;
 }
 .button-order {
+  display: block;
+  margin: 0 auto;
+  border-radius: 4px;
+  padding: 10px 32px;
+  margin-top: 30px;
   background-color: var(--accent-color);
   color: var(--primary-white-color);
   cursor: pointer;
   border: none;
   font-weight: 700;
   font-size: 16px;
-  line-height: 1.87;
+  line-height: 1.875;
 }
 .button-order:hover,
 .button-order:focus {
