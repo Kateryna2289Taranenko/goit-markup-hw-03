@@ -17,7 +17,7 @@ a {
 ul {
   list-style: none;
   margin: 0;
-  margin: 0;
+  padding: 0;
 }
 h1,
 h2,
@@ -71,7 +71,7 @@ img {
   margin-right: 93px;
 }
 .logo:focus {
-  color: var(--accent-color);
+  
 }
 .logo-web {
   color: var(--accent-color);
@@ -83,6 +83,8 @@ img {
   line-height: 1.1428;
   letter-spacing: 0.02em;
   display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .link:hover,
 .link:focus {
@@ -90,13 +92,12 @@ img {
 }
 .list .link.current {
   color: var(--accent-color);
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .list {
   display: flex;
   gap: 50px;
-  padding-left: 0;
-  padding-top: 32px;
-  padding-bottom: 32px;
   margin-right: 344px;
   
 }
@@ -107,6 +108,8 @@ img {
   line-height: 1.1428;
   letter-spacing: 0.02em;
   display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .header-link:hover,
 .header-link:focus {
@@ -115,9 +118,6 @@ img {
 .communication {
   display: flex;
   gap: 50px;
-  padding-left: 0;
-  padding-top: 32px;
-  padding-bottom: 32px;
 }
 
 /* герої */
@@ -178,16 +178,18 @@ img {
   line-height: 1.7142;
 }
 /* робота */
+.section.works {
+  padding-top: 0;
+}
 .work {
   display: flex;
   flex-wrap: wrap;
   column-gap: 30px;
-  padding-left: 0;
-  
 }
 .work-images {
   flex-basis: calc(100% / 3 - 30px);
 }
+
 /* команда */
 .team {
   background-color: #f5f4fa;
@@ -196,14 +198,14 @@ img {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  padding-left: 0;
-  
 }
 .employee {
 flex-basis: calc(100% / 4 - 30px);
 text-align: center;
 padding-bottom: 30px;
 background-color: var(--primary-white-color);
+box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 0px 0px 4px 4px;
 }
 .team-title {
   color: var(--title-text-color);
@@ -257,15 +259,17 @@ background-color: var(--primary-white-color);
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  padding-left: 0; 
 }
 .card-link {
   flex-basis: calc(100% / 9 - 30px);
   background: #FFFFFF;
-  border-bottom: 1px solid #EEEEEE;
+  
 }
 .card {
   padding: 20px 24px;
+  border-bottom: 1px solid #EEEEEE;
+  border-left: 1px solid #EEEEEE;
+  border-right: 1px solid #EEEEEE;
 }
 .projects-title {
   color: var(--title-text-color);
@@ -303,9 +307,6 @@ background-color: var(--primary-white-color);
 }
 .logo-footer:focus {
   color: var(--accent-color);
-}
-.list-address {
-  padding-left: 0;
 }
 .link-address:not(:last-child){
   margin-bottom: 9px;
